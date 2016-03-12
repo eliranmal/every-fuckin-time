@@ -1,6 +1,6 @@
 {
   "name": "every-fuckin-time",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "stuff you write every fuckin time you start coding something new",
   "main": "src/every-fuckin-time.js",
   "scripts": {
