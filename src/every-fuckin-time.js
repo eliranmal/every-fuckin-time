@@ -30,9 +30,10 @@
 
     var printer = function (level) {
         return function () {
-            var args = [].slice.call(arguments);
-            args.unshift('[' + getDateTimeString(new Date()) + ']');
+            var args;
             if (console && console[level]) {
+                args = [].slice.call(arguments);
+                args.unshift('[' + getDateTimeString(new Date()) + ']');
                 console[level].apply(console, args);
             }
         };
